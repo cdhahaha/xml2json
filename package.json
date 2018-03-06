@@ -1,5 +1,5 @@
 {
-  "name": "xml2json",
+  "name": "chend-xml2json",
   "version": "1.0.0",
   "description": "xml2json",
   "main": "./lib/index.js",
