@@ -1,0 +1,29 @@
+{
+  "name": "xml2json",
+  "version": "1.0.0",
+  "description": "xml2json",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "babel test -d lib",
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdhahaha/xml2json.git"
+  },
+  "keywords": [
+    "xml"
+  ],
+  "author": "chend",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cdhahaha/xml2json/issues"
+  },
+  "homepage": "https://github.com/cdhahaha/xml2json#readme",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1"
+  },
+  "bin": {
+    "xml2json": "./bin/cli.js"
+  }
+}
