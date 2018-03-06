@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GB2312"?>
+<map>
+	<element eid="camer" name="camer_info" icon="/camera.png" ratio="800" wstyle="window|div" width="240px" height="130px" durl="http://hakadahua.com/camera/exe.do" eurl="http://hakadahua.com/camera/edit.do">
+		<item id="1000" title="五一中路摄像头"	point="107.887454-25.424222"/>
+		<item id="1001" title="茶亭街摄像头"	point="107.888819-25.42197"	param="..."/>
+		<item id="1002" title="东街口摄像头"	point="107.891011-25.420828"	param="..."/>
+		<item id="1003" title="东街口摄像头"	ratio="1200"	width="280px"	height="130px"	point="107.886376, 25.419326"	param="..."/>
+	</element>
+	<element eid="mapEyes" name="mapEyes_info" icon="/screen.png" ratio="1000" width="120px" height="120px" eurl="http://ccc.cn/do/display">
+		<item id="6111" title="泰和广场显示大屏路" point="107.891873-25.419457" param=""/>
+		<item id="6112" title="泰和广场显示大屏路" point="107.886108-25.415888" param=""/>
+		<item id="6113" title="泰和广场显示大屏路" point="107.89528-25.423104" param=""/>
+		<item id="6113" title="泰和广场显示大屏路" point="107.89528-25.423204" param=""/>
+	</element>
+</map>
