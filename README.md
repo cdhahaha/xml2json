@@ -27,6 +27,7 @@ xml转化为json
 
 ### DEMO
 
+XML文件
 ```xml
 <?xml version="1.0" encoding="GB2312"?>
 <note>
@@ -39,16 +40,18 @@ xml转化为json
     <body>Don't forget the meeting!</body>
 </note>
 ```
-
+Javascipt文件
 ```javascript
-    import xml2json from 'chend-xml2json';
-    
     xml2json('static/read.xml').then(res => {
         console.log(res) // res为转化后的JSON数据
     }).catch(e => {
         console.log(e)
     })
 ```
+
+注意：采用npm安装组件需在项目中引入
+
+- ```import xml2json from 'chend-xml2json';```
 
 res返回的数据格式 
 
@@ -60,14 +63,19 @@ res返回的数据格式
                     "by": "msg"
                 }
             }],
-            "from": [{}],
+            "from": [{
+                attrs: {}
+            }],
             "heading": [{
+                "attrs": {},
                 "children": {
                     "title": [],
                     "subtitle": []
                 }
             }],
-            "body": [{}]
+            "body": [{
+                attrs: {}
+            }]
         }
     }
 ```
