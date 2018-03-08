@@ -97,6 +97,8 @@ var xml2json = (xmlName) => {
       } else {
         reject(obj)
       }
+    }).catch(e => {
+      console.log(e)
     })
   })
 }
