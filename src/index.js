@@ -78,6 +78,10 @@ var xml2json = (xmlName) => {
           if (ele.children.length > 0) {
             eleObj['children'] = mapEle(ele.children)
           }
+          
+          if (JSON.stringify(eleObj.attrs) === '{}') {
+            delete eleObj.attrs
+          }
 
           if (result[ele.nodeName] instanceof Array) {
             result[ele.nodeName].push(eleObj)
@@ -92,10 +96,10 @@ var xml2json = (xmlName) => {
 
       obj[xmlDoc.nodeName] = mapEle(xmlDoc.children)
 
-      if (!xmlDoc) {
+      if (xmlDoc) {
         resolve(obj)
       } else {
-        reject(obj)
+        reject(false)
       }
     }).catch(e => {
       console.log(e)
